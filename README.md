@@ -26,4 +26,4 @@ Open http://localhost:5173 in your browser.
 - **Charts**: Sentiment distribution (donut), Feedback categories (bar)
 - **Live feed**: Scrollable table with Source icon, Comment, AI Auto-Tag badge, Sentiment icon
 
-All data is mock; replace with your API when ready.
+Data is real-time fetched from Reddit and analyzed by Qwen-2.5-72B LLM.
