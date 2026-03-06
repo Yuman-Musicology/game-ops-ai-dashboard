@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #0d0e14;
+  --surface: #1a1b26;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  @apply bg-[var(--bg-base)] text-slate-200 antialiased;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-surface-800;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-surface-500 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}
